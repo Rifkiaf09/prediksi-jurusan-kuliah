@@ -2,11 +2,11 @@ import streamlit as st
 import numpy as np
 import joblib
 
-# Load model dan scaler
+# Load model & scaler
 model = joblib.load("model_prediksi_jurusan.pkl")
 scaler = joblib.load("scaler.pkl")
 
-# Label encoder untuk tampilan hasil
+# Label encoder untuk menampilkan hasilnya
 label_dict = {0: "Bahasa", 1: "IPA", 2: "IPS"}
 
 st.title("🎓 Prediksi Jurusan Kuliah")
@@ -47,7 +47,7 @@ input_data = np.array([
     map_dict[tipe_sekolah]
 ]).reshape(1, -1)
 
-# Prediksi
+# Prediction
 if st.button("Prediksi Jurusan"):
     scaled_data = scaler.transform(input_data)
     prediction = model.predict(scaled_data)[0]
