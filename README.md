@@ -1,6 +1,6 @@
 # 🎓 Prediksi Jurusan Kuliah
 
-Proyek machine learning untuk memprediksi jurusan kuliah siswa berdasarkan nilai akademik, minat, dan latar belakang.
+Proyek machine learning ini bertujuan untuk memprediksi jurusan kuliah siswa berdasarkan nilai akademik, minat, dan latar belakang.
 
 ## 🔧 Teknologi yang Digunakan
 - Python, Pandas, Scikit-Learn
