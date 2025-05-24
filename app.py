@@ -3,8 +3,6 @@ import pandas as pd
 import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.preprocessing import StandardScaler
-import matplotlib.pyplot as plt
-import seaborn as sns
 
 # Judul aplikasi
 st.title("🎓 Aplikasi Prediksi Jurusan Kuliah")
@@ -34,7 +32,7 @@ def load_data():
     }
 
     df = pd.DataFrame(data)
-    
+
     def label_row(row):
         if row["interest"] == 0 and row["science_score"] > 75:
             return "IPA"
@@ -68,21 +66,3 @@ if st.button("🔮 Prediksi Jurusan"):
     user_data_scaled = scaler.transform(user_data)
     prediction = model.predict(user_data_scaled)[0]
     st.success(f"Rekomendasi jurusan untuk siswa ini adalah: **{prediction}**")
-
-# --- Visualisasi Data ---
-
-st.subheader("📊 Distribusi Minat Siswa")
-interest_labels = {0: "IPA", 1: "IPS", 2: "Bahasa"}
-df["interest_label"] = df["interest"].map(interest_labels)
-fig1, ax1 = plt.subplots()
-sns.countplot(x="interest_label", data=df, ax=ax1, palette="pastel")
-ax1.set_xlabel("Minat Siswa")
-ax1.set_ylabel("Jumlah")
-st.pyplot(fig1)
-
-st.subheader("📈 Jurusan yang Direkomendasikan Berdasarkan Minat")
-fig2, ax2 = plt.subplots()
-sns.countplot(x="jurusan", hue="interest_label", data=df, palette="Set2", ax=ax2)
-ax2.set_xlabel("Jurusan")
-ax2.set_ylabel("Jumlah")
-st.pyplot(fig2)
