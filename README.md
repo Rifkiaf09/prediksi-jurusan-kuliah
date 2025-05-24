@@ -1,14 +1,18 @@
-# prediksi-jurusan-kuliah
-Project Machine Learning sederhana untuk memprediksi jurusan kuliah siswa/i berdasarkan nilai dan minat siswa/i
+#🎓 Prediksi Jurusan Kuliah
 
-## Berikut isi Filenya:
-- `Prediksi_Jurusan_Kuliah.ipynb` - Notebook training model
-- `dataset_prediksi_jurusan.csv` - Dataset simulasi
-- `model_prediksi_jurusan.pkl` - Model yang sudah ditraining
-- `scaler.pkl` - Scaler untuk normalisasi
-- `app.py` - Aplikasi Streamlit 
+Proyek machine learning untuk memprediksi jurusan kuliah siswa berdasarkan nilai akademik, minat, dan latar belakang.
 
-## Cara Menjalankan project ini:
-1. Buka notebook di Google Colab
-2. Upload file dataset dan model
-3. Jalankan cell dari atas ke bawah
+## 🔧 Teknologi yang Digunakan
+- Python, Pandas, Scikit-Learn
+- Streamlit untuk aplikasi web
+- GitHub untuk version control
+
+## 📁 File Penting
+- `app.py` → aplikasi web
+- `Prediksi_Jurusan_Kuliah.ipynb` → training model
+- `model_prediksi_jurusan.pkl` → model siap pakai
+- `requirements.txt` → untuk setup
+
+
+## 📊 Dataset
+Dataset disimulasikan untuk latihan, berisi nilai rapor, minat, dan jurusan yang dipilih dari 500 siswa.
