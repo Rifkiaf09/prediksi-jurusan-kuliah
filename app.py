@@ -73,4 +73,7 @@ y = df["jurusan"]
 
 # Normalisasi dan training
 scaler = StandardScaler()
-X_scaled = scaler.fit_tra
+X_scaled = scaler.fit_transform(X)
+model = DecisionTreeClassifier()
+model.fit(X_scaled, y)
+
