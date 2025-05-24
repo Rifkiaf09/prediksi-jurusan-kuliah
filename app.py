@@ -77,3 +77,12 @@ X_scaled = scaler.fit_transform(X)
 model = DecisionTreeClassifier()
 model.fit(X_scaled, y)
 
+# Tombol prediksi
+if st.button("Prediksi Jurusan"):
+    input_data = np.array([[math, english, science, social,
+                            minat_ipa_num, minat_ips_num, minat_bahasa_num,
+                            ekonomi_num, tipe_sekolah_num]])
+    input_scaled = scaler.transform(input_data)
+    prediksi = model.predict(input_scaled)
+    st.success(f"✅ Jurusan yang direkomendasikan: **{prediksi[0]}**")
+
