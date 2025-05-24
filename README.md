@@ -1,4 +1,4 @@
-#🎓 Prediksi Jurusan Kuliah
+# 🎓 Prediksi Jurusan Kuliah
 
 Proyek machine learning untuk memprediksi jurusan kuliah siswa berdasarkan nilai akademik, minat, dan latar belakang.
 
@@ -13,6 +13,8 @@ Proyek machine learning untuk memprediksi jurusan kuliah siswa berdasarkan nilai
 - `model_prediksi_jurusan.pkl` → model siap pakai
 - `requirements.txt` → untuk setup
 
+## 🚀 Coba Aplikasinya
+👉 [Klik di sini untuk mencoba](https://namamu-reponya.streamlit.app)
 
 ## 📊 Dataset
-Dataset disimulasikan untuk latihan, berisi nilai rapor, minat, dan jurusan yang dipilih dari 500 siswa.
+Dataset disimulasikan untuk latihan, berisi nilai rapor, minat, dan jurusan yang dipilih dari nilai 500 siswa.
