@@ -19,7 +19,7 @@ Proyek machine learning ini bertujuan untuk memprediksi jurusan kuliah siswa ber
 ## 📊 Dataset
 Dataset disimulasikan untuk latihan, berisi nilai rapor, minat, dan jurusan yang dipilih dari nilai 500 siswa.
 
-## Note:
+## Notes:
 - Dataset yang digunakan bersifat buatan (sintetik), sehingga hasil prediksi tidak bisa dijadikan acuan dalam keputusan nyata.
 - Menggunakan model Decision Tree tanpa tuning hyperparameter atau validasi silang, sehingga performa dan akurasi belum optimal.
 - Tidak ada metrik performa seperti akurasi, precision, recall yang ditampilkan kepada pengguna.
