@@ -67,7 +67,7 @@ def generate_data():
 
 df = generate_data()
 
-# Fitur & label
+# Fitur &label
 X = df[["math", "english", "science", "social", "minat_ipa", "minat_ips", "minat_bahasa", "ekonomi", "sekolah"]]
 y = df["jurusan"]
 
@@ -77,7 +77,7 @@ X_scaled = scaler.fit_transform(X)
 model = DecisionTreeClassifier()
 model.fit(X_scaled, y)
 
-# Tombol prediksi
+#Tombol prediksi
 if st.button("Prediksi Jurusan"):
     input_data = np.array([[math, english, science, social,
                             minat_ipa_num, minat_ips_num, minat_bahasa_num,
